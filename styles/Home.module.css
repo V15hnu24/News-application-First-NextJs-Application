@@ -1,9 +1,21 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 6rem;
+  font-size: 1.25rem;
+  min-height: 100vh;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
   min-height: 100vh;
 }
 
@@ -149,6 +161,22 @@
     rgba(var(--tile-end-rgb), 1)
   );
   background-clip: content-box;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(var(--card-border-rgb), 0.3);
+  height: 100px;
+  /* opacity: 0.6; */
+}
+
+.footer img {
+  margin-left: 0.5rem;
 }
 
 /* Enable hover only on non-touch devices */
